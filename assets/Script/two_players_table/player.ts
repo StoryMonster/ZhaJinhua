@@ -94,7 +94,7 @@ export default class Player implements PlayerActions{
         let winRate: number = rateCalculator.getWinRate() * 100;
         let drawRate: number = rateCalculator.getDrawRate() * 100;
         let failRate: number = rateCalculator.getFailRate() * 100;
-        this.resultPossibilityNode.getComponent(cc.Label).string = `win: ${winRate.toFixed(2)}\%  draw: ${drawRate.toFixed(2)}\%  fail: ${failRate.toFixed(2)}\%`;
+        this.resultPossibilityNode.getComponent(cc.Label).string = `胜: ${winRate.toFixed(2)}\%  平: ${drawRate.toFixed(2)}\%  负: ${failRate.toFixed(2)}\%`;
         this.resultPossibilityNode.active = true;
     }
 
